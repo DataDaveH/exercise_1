@@ -3,9 +3,9 @@ CREATE EXTERNAL TABLE measures (
 Measure_Name STRING,
 Measure_ID STRING,
 Measure_Start_Quarter STRING,
-Measure_Start_Date DATE,
+Measure_Start_Date STRING,
 Measure_End_Quarter STRING,
-Measure_End_Date DATE
+Measure_End_Date STRING
 )
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES (
@@ -18,7 +18,7 @@ LOCATION '/user/w205/hospital_compare/measures';
 
 DROP TABLE survey_responses;
 CREATE EXTERNAL TABLE survey_responses (
-Provider_Number INT,
+Provider_Number STRING,
 Hospital_Name STRING,
 Address STRING,
 City STRING,
@@ -114,11 +114,11 @@ Phone_Number STRING,
 Condition STRING,
 Measure_ID STRING,
 Measure_Name STRING,
-Score INT,
+Score STRING,
 Sample STRING,
 Footnote STRING,
-Measure_Start_Date DATE,
-Measure_End_Date DATE
+Measure_Start_Date STRING,
+Measure_End_Date STRING
 )
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES (
@@ -131,7 +131,7 @@ LOCATION '/user/w205/hospital_compare/effective_care';
 
 DROP TABLE hospitals;
 CREATE EXTERNAL TABLE hospitals (
-Provider_ID INT,
+Provider_ID STRING,
 Hospital_Name STRING,
 Address STRING,
 City STRING,
@@ -143,7 +143,7 @@ Hospital_Type STRING,
 Hospital_Ownership STRING,
 Emergency_Services STRING,
 Meets_criteria_for_meaningful_use_of_EHRs STRING,
-Hospital_overall_rating INT,
+Hospital_overall_rating STRING,
 Hospital_overall_rating_footnote STRING,
 Mortality_national_comparison STRING,
 Mortality_national_comparison_footnote STRING,
@@ -171,7 +171,7 @@ LOCATION '/user/w205/hospital_compare/hospitals';
 
 DROP TABLE readmissions;
 CREATE EXTERNAL TABLE readmissions (
-Provider_ID INT,
+Provider_ID STRING,
 Hospital_Name STRING,
 Address STRING,
 City STRING,
@@ -180,15 +180,15 @@ ZIP_Code STRING,
 County_Name STRING,
 Phone_Number STRING,
 Measure_Name STRING,
-Measure_ID INT,
+Measure_ID STRING,
 Compared_to_National STRING,
-Denominator INT,
-Score FLOAT,
+Denominator STRING,
+Score STRING,
 Lower_Estimate STRING,
 Higher_Estimate STRING,
 Footnote STRING,
-Measure_Start_Date DATE,
-Measure_End_Date DATE
+Measure_Start_Date STRING,
+Measure_End_Date STRING
 )
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES (
