@@ -1,3 +1,4 @@
+DROP TABLE measures;
 CREATE EXTERNAL TABLE measures (
 Measure_Name STRING,
 Measure_ID STRING,
