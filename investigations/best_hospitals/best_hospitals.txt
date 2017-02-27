@@ -1,0 +1,20 @@
++----------+--------------------------------------------------+-----+------------+
+|providerID|name                                              |state|QualityScore|
++----------+--------------------------------------------------+-----+------------+
+|170186    |KANSAS HEART HOSPITAL                             |KS   |99.18       |
+|050257    |GOOD SAMARITAN HOSPITAL                           |CA   |99.02       |
+|400118    |DOCTORS' CENTER HOSPITAL, INC                     |PR   |98.90       |
+|240019    |ESSENTIA HEALTH DULUTH                            |MN   |98.86       |
+|400103    |MAYAGUEZ MEDICAL CENTER DR RAMON EMETERIO BETANCES|PR   |94.71       |
+|280134    |KEARNEY REGIONAL MEDICAL CENTER                   |NE   |91.43       |
+|070039    |MASONICARE HEALTH CENTER                          |CT   |82.86       |
+|050424    |SCRIPPS GREEN HOSPITAL                            |CA   |71.93       |
+|050696    |KECK HOSPITAL OF USC                              |CA   |57.07       |
+|141308    |WASHINGTON COUNTY HOSPITAL*                       |IL   |49.14       |
++----------+--------------------------------------------------+-----+------------+
+
+With Standard Deviation of Quality Score: 12.004
+
+The quality score takes into account all measures for effective care normalized and averaged together with a count of more than 100 hospitals with a small penalty for overall hospital 30-day readmissions and 30-day mortality rates. The hospital with the highest quality of care is Kansas Heart Hospital. 
+
+ 
