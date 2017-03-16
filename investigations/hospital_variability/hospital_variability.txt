@@ -1,0 +1,24 @@
++----------+-----+-----------+---------------------------------------------------------------------------------------------+
+|MeasureID |Count|Variability|Description                                                                                  |
++----------+-----+-----------+---------------------------------------------------------------------------------------------+
+|EDV       |3479 |0.37505    |Emergency Department Volume                                                                  |
+|OP_31     |57   |0.29266    |Percentage of patients aged 18 years and older who had cataract surgery and had improvement  |
+|	   	 	     | in visual function achieved within 90 days following the cataract surgery      		   |
+|OP_2      |81   |0.25241    |Fibrinolytic Therapy Received Within 30 Minutes of ED Arrival                                |
+|OP_29     |2837 |0.24503    |Appropriate Follow-Up Interval for Normal Colonoscopy in Average Risk Patients               |
+|OP_23     |1276 |0.19926    |Head CT or MRI Scan Results for Acute Ischemic Stroke or Hemorrhagic Stroke Patients who 	   |
+|	   	 	     | Received Head CT or MRI Scan Interpretation Within 45 minutes of ED Arrival 	   	   |
+|OP_30     |2755 |0.19279    |Colonoscopy Interval for Patients with a History of Adenomatous Polyps - Avoidance of 	   |
+|	   	 	     | Inappropriate Use                                                              	 	   |
+|STK_4     |928  |0.16303    |Thrombolytic Therapy                                                                         |
+|OP_1      |81   |0.13655    |Median Time to Fibrinolysis                                                                  |
+|MORT_30_HF|3614 |0.13528    |Heart Failure (HF) 30-Day Mortality Rate                                                     |
+|IMM_2     |4071 |0.13298    |Influenza Immunization                                                                       |
++----------+-----+-----------+---------------------------------------------------------------------------------------------+
+
+
+Variability is computed according to the measure's standard deviation divided by the measure's score range so that scores 
+from different scales can be compared. The most variable procedure is, not surprisingly, the volume of admitted patients to
+the emergency department. This makes sense because hospitals vary drastically in size. Measures with lower counts are not as
+useful as those with higher counts, but all measures were included in this investigation. This also makes it not surprising
+that measures with low counts have high variability. 

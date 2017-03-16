@@ -1,0 +1,22 @@
++----------+--------------------------------------------------+------+-----+--------+
+|providerID|name                                              |rating|state|score   |
++----------+--------------------------------------------------+------+-----+--------+
+|670076    |BAYLOR SCOTT AND WHITE SURGICAL HOSPITAL AT SHERMA|0     |TX   |100.0000|
+|180149    |T J HEALTH COLUMBIA                               |4     |KY   |100.0000|
+|360352    |SURGICAL HOSPITAL AT SOUTHWOODS                   |5     |OH   |100.0000|
+|170190    |MANHATTAN SURGICAL HOSPITAL LLC                   |0     |KS   |100.0000|
+|520194    |ORTHOPAEDIC HOSPITAL OF WISCONSIN                 |0     |WI   |100.0000|
+|520196    |OAKLEAF SURGICAL HOSPITAL                         |0     |WI   |100.0000|
+|050697    |PATIENTS' HOSPITAL OF REDDING                     |0     |CA   |100.0000|
+|390316    |SURGICAL INSTITUTE OF READING                     |0     |PA   |100.0000|
+|450864    |TEXAS SPINE AND JOINT HOSPITAL                    |5     |TX   |100.0000|
+|390323    |ADVANCED SURGICAL HOSPITAL                        |0     |PA   |100.0000|
++----------+--------------------------------------------------+------+-----+--------+
+
+Rating/SurveyScore correlation: 0.163
+QualityScore/SurveyScore correlation: -0.157
+
+There were many hospitals with high survey response scores. These are just 10 of those with a perfect score.
+There is practically no correlation whatsoever with the quality scores computed in Question 1. Interestingly,
+there is also negligible correlation between the overall rating constructed by hospital compare and the patient
+survey responses.

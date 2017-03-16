@@ -1,20 +1,26 @@
-+----------+--------------------------------------------------+-----+------------+
-|providerID|name                                              |state|QualityScore|
-+----------+--------------------------------------------------+-----+------------+
-|170186    |KANSAS HEART HOSPITAL                             |KS   |99.18       |
-|050257    |GOOD SAMARITAN HOSPITAL                           |CA   |99.02       |
-|400118    |DOCTORS' CENTER HOSPITAL, INC                     |PR   |98.90       |
-|240019    |ESSENTIA HEALTH DULUTH                            |MN   |98.86       |
-|400103    |MAYAGUEZ MEDICAL CENTER DR RAMON EMETERIO BETANCES|PR   |94.71       |
-|280134    |KEARNEY REGIONAL MEDICAL CENTER                   |NE   |91.43       |
-|070039    |MASONICARE HEALTH CENTER                          |CT   |82.86       |
-|050424    |SCRIPPS GREEN HOSPITAL                            |CA   |71.93       |
-|050696    |KECK HOSPITAL OF USC                              |CA   |57.07       |
-|141308    |WASHINGTON COUNTY HOSPITAL*                       |IL   |49.14       |
-+----------+--------------------------------------------------+-----+------------+
++----------+-------------------------------------------+-----+------------+--------+-----------------+----------+
+|ProviderID|name                                       |state|QualityScore|Penalty |StandardDeviation|FinalScore|
++----------+-------------------------------------------+-----+------------+--------+-----------------+----------+
+|330202    |KINGS COUNTY HOSPITAL CENTER               |NY   |962.187     |14.83333|32.11026         |947.35367 |
+|330128    |ELMHURST HOSPITAL CENTER                   |NY   |950.885     |15.16667|34.3775          |935.71833 |
+|050295    |MERCY HOSPITAL                             |CA   |934.673     |15.83333|38.00104         |918.83967 |
+|450723    |METHODIST CHARLTON MEDICAL CENTER          |TX   |919.016     |13.28571|35.96895         |905.73029 |
+|050573    |EISENHOWER MEDICAL CENTER                  |CA   |901.283     |11.85714|37.64474         |889.42586 |
+|310086    |KENNEDY UNIVERSITY HOSPITAL - STRATFORD DIV|NJ   |903.302     |14.33333|40.13056         |888.96867 |
+|340032    |CAROMONT REGIONAL MEDICAL CENTER           |NC   |886.436     |13.28571|40.83364         |873.15029 |
+|050149    |CALIFORNIA HOSPITAL MEDICAL CENTER LA      |CA   |887.341     |14.5    |38.45393         |872.841   |
+|330141    |BROOKHAVEN MEMORIAL HOSPITAL MEDICAL CENTER|NY   |882.53      |13.83333|35.35523         |868.69667 |
+|050104    |SAINT FRANCIS MEDICAL CENTER               |CA   |876.977     |12.66667|35.28521         |864.31033 |
++----------+-------------------------------------------+-----+------------+--------+-----------------+----------+
 
-With Standard Deviation of Quality Score: 12.004
 
-The quality score takes into account all measures for effective care normalized and averaged together with a count of more than 100 hospitals with a small penalty for overall hospital 30-day readmissions and 30-day mortality rates. The hospital with the highest quality of care is Kansas Heart Hospital. 
+The quality score takes into account all measures for effective care that had more than 100 hospitals contributing:
+
+OP_23, OP_29, OP_30, OP_4, VTE_5, STK_4, VTE_6, EDV, ED_1b, ED_2b, OP_18b, OP_20, OP_21, OP_5
+
+It is then normalized and averaged with a penalty subtracted for overall hospital 30-day readmissions and 30-day 
+mortality rates as well as for missing measures (available measures subtracted from total measures) to build the
+Final Score. The hospital with the highest quality of care is Kings County Hospital Center.
+Note: the Final Score is used only for ranking purposes.
 
  

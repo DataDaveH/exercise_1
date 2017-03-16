@@ -1,18 +1,18 @@
-+-----+------------+
-|state|QualityScore|
-+-----+------------+
-|VI   |39.250000   |
-|MA   |32.210862   |
-|CT   |32.195000   |
-|RI   |30.870000   |
-|VA   |29.796203   |
-|DE   |29.441667   |
-|SC   |29.412308   |
-|PA   |29.021544   |
-|FL   |28.907824   |
-|VT   |28.421429   |
-+-----+------------+
++----+-----+-----------------+--------+
+|Rank|State|StandardDeviation|Score   |
++----+-----+-----------------+--------+
+|1   |MA   |14.80861         |54.79607|
+|2   |VA   |15.24793         |52.86483|
+|3   |DE   |9.80382          |52.51558|
+|4   |SC   |13.64915         |52.00963|
+|5   |NJ   |13.29371         |51.21481|
+|6   |FL   |13.03429         |51.06848|
+|7   |CT   |14.71421         |50.93701|
+|8   |RI   |5.50482          |49.69748|
+|9   |OH   |18.57076         |49.62218|
+|10  |PA   |11.44373         |49.23921|
++----+-----+-----------------+--------+
 
-With Standard Deviation of Quality Score: 5.992
-
-The best hospital quality scores were average by state to produce this list of top 10 statesw with the highest quality of care. It should be noted that due to the large variation in number of hospitals per state, states with more hospitals may be unfairly penalized. This is likely why the Virgin Islands comes out on top.
+The best hospital quality scores were averaged by state to produce this list of top 10 states with the highest 
+quality of care. It seems that Massachusetts comes out on top by a few points, with Virginia, Deleware, and
+South Carolina very close behind. 
